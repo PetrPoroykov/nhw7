@@ -37,7 +37,7 @@ public class Company {
         System.out.println("Компания : " + title);
         System.out.println("Перечень доходов и расходов ");
         for (Deal deal : deals) {
-            deal.printTransactions(deal);
+            deal.printTransactions();
         }
     }
 

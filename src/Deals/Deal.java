@@ -27,7 +27,7 @@ public class Deal {
         this.debitChange = debitChange;
     }
 
-    public void printTransactions(Deal deal){
+    public void printTransactions(){
         System.out.println("Безвозмездная сделка");
     }
 }

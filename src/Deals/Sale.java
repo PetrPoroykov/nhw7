@@ -6,7 +6,7 @@ public class Sale extends Deal {
     }
 
     @Override
-    public void printTransactions(Deal deal) {
-            System.out.printf("Продажа %S  на %d руб.\n", deal.getComment(), deal.getDebitChange());
+    public void printTransactions() {
+        System.out.printf("Продажа %S  на %d руб.\n", getComment(), getDebitChange());
     }
 }

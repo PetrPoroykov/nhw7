@@ -6,7 +6,7 @@ public class Expenditure extends Deal {
     }
 
     @Override
-    public void printTransactions(Deal deal) {
-        System.out.printf("Покупка %S  на %d руб.\n", deal.getComment(), deal.getCreditChange());
+    public void printTransactions() {
+        System.out.printf("Покупка %S  на %d руб.\n", getComment(), getCreditChange());
     }
 }

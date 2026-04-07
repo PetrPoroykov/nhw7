@@ -28,6 +28,6 @@ public class Deal {
     }
 
     public void printTransactions(){
-        System.out.println("Безвозмездная сделка");
+        System.out.println("Внебалансовая сделка");
     }
 }

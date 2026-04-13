@@ -20,6 +20,7 @@ public class Main {
         company1.setCredit(50);
         company1.payTaxes();
 
+
         Company company2 = new Company("The second company", new TaxSystem());
         company2.setTaxSystem(new TaxSystem15());
         company2.setDebit(150);

@@ -7,6 +7,7 @@ public class Company {
     private int credit;
     private TaxSystem taxSystem;
     private Deal[] deals = new Deal[10];
+    private int finalbalance;
 
     public Company(String title, TaxSystem taxSystem) {
         this.title = title;
@@ -31,6 +32,8 @@ public class Company {
 
     public void payTaxes() {
         System.out.printf("Компания  < %s > уплатила налог в размере: %d руб. \n", title, taxSystem.calcTaxFor(debit, credit));
+        debit = 0;
+        credit = 0;
     }
 
     public void printingListTransactions() {
@@ -46,7 +49,8 @@ public class Company {
             debit = debit + deal.getDebitChange();
             credit = credit + deal.getCreditChange();
         }
+        finalbalance = debit - credit;
         payTaxes();
-        return debit - credit;
+        return finalbalance;
     }
 }
